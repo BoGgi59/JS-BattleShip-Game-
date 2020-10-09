@@ -4,10 +4,11 @@ let guesses = 0;
 
 let isSunk = false;
 
-//The location of Ship(3cells 0f 7 possible cells)
-let location1 = 4;
-let location2 = 5;
-let location3 = 6;
+//The Random location of Ship(3cells 0f 7 possible cells)
+let randomLocation = Math.floor(Math.random()*5);
+let location1 = randomLocation;
+let location2 = location1 + 1;
+let location3 = location2 + 1;
 
 while (isSunk == false) {
   guess = prompt("Ready, Aim, Fire! (enter a number 0-6) :");
